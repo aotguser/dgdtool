@@ -1,0 +1,28 @@
+{
+    "dgdtoolApp": {
+        "package_version" : {
+            "home": {
+                "title": "Package_versions",
+                "createLabel": "Create a new Package_version",
+                "createOrEditLabel": "Create or edit a Package_version"
+            },
+            "created": "A new Package_version is created with identifier {{ param }}",
+            "updated": "A Package_version is updated with identifier {{ param }}",
+            "deleted": "A Package_version is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Package_version {{ id }}?"
+            },
+            "detail": {
+                "title": "Package_version"
+            },
+            "package_version_name": "Package_version_name",
+            "package_id": "Package_id",
+            "description": "Description",
+            "status_id": "Status_id",
+            "created_by": "Created_by",
+            "created_date": "Created_date",
+            "modified_by": "Modified_by",
+            "modified_date": "Modified_date"
+        }
+    }
+}

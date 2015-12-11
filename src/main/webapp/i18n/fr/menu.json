@@ -1,0 +1,29 @@
+{
+    "dgdtoolApp": {
+        "menu" : {
+            "home": {
+                "title": "Menus",
+                "createLabel": "Créer un nouveau Menu",
+                "createOrEditLabel": "Créer ou éditer un Menu"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Menu {{ id }} ?"
+            },
+            "detail": {
+                "title": "Menu"
+            },
+            "parent_menu_id": "Parent_menu_id",
+            "menu_item_name": "Menu_item_name",
+            "controller_url": "Controller_url",
+            "display_order": "Display_order",
+            "menu_hint": "Menu_hint",
+            "description": "Description",
+            "status_id": "Status_id",
+            "created_by": "Created_by",
+            "created_date": "Created_date",
+            "modified_by": "Modified_by",
+            "modified_date": "Modified_date"
+        }
+    }
+}
+

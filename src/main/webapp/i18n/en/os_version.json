@@ -1,0 +1,27 @@
+{
+    "dgdtoolApp": {
+        "os_version" : {
+            "home": {
+                "title": "Os_versions",
+                "createLabel": "Create a new Os_version",
+                "createOrEditLabel": "Create or edit a Os_version"
+            },
+            "created": "A new Os_version is created with identifier {{ param }}",
+            "updated": "A Os_version is updated with identifier {{ param }}",
+            "deleted": "A Os_version is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Os_version {{ id }}?"
+            },
+            "detail": {
+                "title": "Os_version"
+            },
+            "os_version_name": "Os_version_name",
+            "description": "Description",
+            "status_id": "Status_id",
+            "created_by": "Created_by",
+            "created_date": "Created_date",
+            "modified_by": "Modified_by",
+            "modified_date": "Modified_date"
+        }
+    }
+}

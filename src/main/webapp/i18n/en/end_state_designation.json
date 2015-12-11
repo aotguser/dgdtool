@@ -1,0 +1,27 @@
+{
+    "dgdtoolApp": {
+        "end_state_designation" : {
+            "home": {
+                "title": "End_state_designations",
+                "createLabel": "Create a new End_state_designation",
+                "createOrEditLabel": "Create or edit a End_state_designation"
+            },
+            "created": "A new End_state_designation is created with identifier {{ param }}",
+            "updated": "A End_state_designation is updated with identifier {{ param }}",
+            "deleted": "A End_state_designation is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete End_state_designation {{ id }}?"
+            },
+            "detail": {
+                "title": "End_state_designation"
+            },
+            "end_state_designation_name": "End_state_designation_name",
+            "description": "Description",
+            "status_id": "Status_id",
+            "created_by": "Created_by",
+            "created_date": "Created_date",
+            "modified_by": "Modified_by",
+            "modified_date": "Modified_date"
+        }
+    }
+}

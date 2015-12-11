@@ -1,0 +1,24 @@
+{
+  "generator-jhipster": {
+    "baseName": "dgdtool",
+    "packageName": "com.asp.dgdtool",
+    "packageFolder": "com/asp/dgdtool",
+    "authenticationType": "session",
+    "hibernateCache": "ehcache",
+    "clusteredHttpSession": "no",
+    "websocket": "no",
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": "elasticsearch",
+    "useSass": false,
+    "buildTool": "maven",
+    "frontendBuilder": "grunt",
+    "enableTranslation": true,
+    "enableSocialSignIn": true,
+    "rememberMeKey": "1ca8ce9f8693a7764abd26ca839e62143eb786e0",
+    "testFrameworks": [
+      "gatling"
+    ]
+  }
+}

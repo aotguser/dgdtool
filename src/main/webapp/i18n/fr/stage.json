@@ -1,0 +1,25 @@
+{
+    "dgdtoolApp": {
+        "stage" : {
+            "home": {
+                "title": "Stages",
+                "createLabel": "Créer un nouveau Stage",
+                "createOrEditLabel": "Créer ou éditer un Stage"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Stage {{ id }} ?"
+            },
+            "detail": {
+                "title": "Stage"
+            },
+            "stage_name": "Stage_name",
+            "description": "Description",
+            "status_id": "Status_id",
+            "created_by": "Created_by",
+            "created_date": "Created_date",
+            "modified_by": "Modified_by",
+            "modified_date": "Modified_date"
+        }
+    }
+}
+

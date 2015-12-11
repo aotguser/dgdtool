@@ -1,0 +1,27 @@
+{
+    "dgdtoolApp": {
+        "initiative_type" : {
+            "home": {
+                "title": "Initiative_types",
+                "createLabel": "Create a new Initiative_type",
+                "createOrEditLabel": "Create or edit a Initiative_type"
+            },
+            "created": "A new Initiative_type is created with identifier {{ param }}",
+            "updated": "A Initiative_type is updated with identifier {{ param }}",
+            "deleted": "A Initiative_type is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Initiative_type {{ id }}?"
+            },
+            "detail": {
+                "title": "Initiative_type"
+            },
+            "initiative_type_name": "Initiative_type_name",
+            "description": "Description",
+            "status_id": "Status_id",
+            "created_by": "Created_by",
+            "created_date": "Created_date",
+            "modified_by": "Modified_by",
+            "modified_date": "Modified_date"
+        }
+    }
+}

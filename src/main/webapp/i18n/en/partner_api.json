@@ -1,0 +1,32 @@
+{
+    "dgdtoolApp": {
+        "partner_api" : {
+            "home": {
+                "title": "Partner_apis",
+                "createLabel": "Create a new Partner_api",
+                "createOrEditLabel": "Create or edit a Partner_api"
+            },
+            "created": "A new Partner_api is created with identifier {{ param }}",
+            "updated": "A Partner_api is updated with identifier {{ param }}",
+            "deleted": "A Partner_api is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Partner_api {{ id }}?"
+            },
+            "detail": {
+                "title": "Partner_api"
+            },
+            "partner_id": "Partner_id",
+            "partner_req_url": "Partner_req_url",
+            "partner_req_obj": "Partner_req_obj",
+            "partner_res_url": "Partner_res_url",
+            "asp_method": "Asp_method",
+            "asp_app_id": "Asp_app_id",
+            "description": "Description",
+            "status_id": "Status_id",
+            "created_by": "Created_by",
+            "created_date": "Created_date",
+            "modified_by": "Modified_by",
+            "modified_date": "Modified_date"
+        }
+    }
+}

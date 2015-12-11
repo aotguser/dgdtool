@@ -1,0 +1,25 @@
+{
+    "dgdtoolApp": {
+        "environment" : {
+            "home": {
+                "title": "Environments",
+                "createLabel": "Créer un nouveau Environment",
+                "createOrEditLabel": "Créer ou éditer un Environment"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Environment {{ id }} ?"
+            },
+            "detail": {
+                "title": "Environment"
+            },
+            "environment_name": "Environment_name",
+            "description": "Description",
+            "status_id": "Status_id",
+            "created_by": "Created_by",
+            "created_date": "Created_date",
+            "modified_by": "Modified_by",
+            "modified_date": "Modified_date"
+        }
+    }
+}
+

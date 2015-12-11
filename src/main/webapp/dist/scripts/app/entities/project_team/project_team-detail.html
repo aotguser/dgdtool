@@ -1,0 +1,118 @@
+
+<div>
+    <h2><span translate="dgdtoolApp.project_team.detail.title">Project_team</span> {{project_team.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th translate="entity.detail.field">Field</th>
+                <th translate="entity.detail.value">Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span translate="dgdtoolApp.project_team.project_id">Project_id</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{project_team.project_id}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="dgdtoolApp.project_team.resource_id">Resource_id</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{project_team.resource_id}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="dgdtoolApp.project_team.role_id">Role_id</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{project_team.role_id}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="dgdtoolApp.project_team.support_level">Support_level</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{project_team.support_level}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="dgdtoolApp.project_team.est_hours">Est_hours</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{project_team.est_hours}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="dgdtoolApp.project_team.assigned_date">Assigned_date</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{project_team.assigned_date | date:'medium'}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="dgdtoolApp.project_team.description">Description</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{project_team.description}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="dgdtoolApp.project_team.status_id">Status_id</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{project_team.status_id}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="dgdtoolApp.project_team.created_by">Created_by</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{project_team.created_by}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="dgdtoolApp.project_team.created_date">Created_date</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{project_team.created_date | date:'mediumDate'}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="dgdtoolApp.project_team.modified_by">Modified_by</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{project_team.modified_by}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="dgdtoolApp.project_team.modified_date">Modified_date</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{project_team.modified_date | date:'mediumDate'}}</span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

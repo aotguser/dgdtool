@@ -1,0 +1,27 @@
+{
+    "dgdtoolApp": {
+        "license_type" : {
+            "home": {
+                "title": "License_types",
+                "createLabel": "Create a new License_type",
+                "createOrEditLabel": "Create or edit a License_type"
+            },
+            "created": "A new License_type is created with identifier {{ param }}",
+            "updated": "A License_type is updated with identifier {{ param }}",
+            "deleted": "A License_type is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete License_type {{ id }}?"
+            },
+            "detail": {
+                "title": "License_type"
+            },
+            "license_type_name": "License_type_name",
+            "description": "Description",
+            "status_id": "Status_id",
+            "created_by": "Created_by",
+            "created_date": "Created_date",
+            "modified_by": "Modified_by",
+            "modified_date": "Modified_date"
+        }
+    }
+}

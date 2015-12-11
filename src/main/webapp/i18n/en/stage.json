@@ -1,0 +1,27 @@
+{
+    "dgdtoolApp": {
+        "stage" : {
+            "home": {
+                "title": "Stages",
+                "createLabel": "Create a new Stage",
+                "createOrEditLabel": "Create or edit a Stage"
+            },
+            "created": "A new Stage is created with identifier {{ param }}",
+            "updated": "A Stage is updated with identifier {{ param }}",
+            "deleted": "A Stage is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Stage {{ id }}?"
+            },
+            "detail": {
+                "title": "Stage"
+            },
+            "stage_name": "Stage_name",
+            "description": "Description",
+            "status_id": "Status_id",
+            "created_by": "Created_by",
+            "created_date": "Created_date",
+            "modified_by": "Modified_by",
+            "modified_date": "Modified_date"
+        }
+    }
+}

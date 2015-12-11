@@ -1,0 +1,25 @@
+{
+    "dgdtoolApp": {
+        "feedback_type" : {
+            "home": {
+                "title": "Feedback_types",
+                "createLabel": "Créer un nouveau Feedback_type",
+                "createOrEditLabel": "Créer ou éditer un Feedback_type"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Feedback_type {{ id }} ?"
+            },
+            "detail": {
+                "title": "Feedback_type"
+            },
+            "feedback_type_name": "Feedback_type_name",
+            "description": "Description",
+            "status_id": "Status_id",
+            "created_by": "Created_by",
+            "created_date": "Created_date",
+            "modified_by": "Modified_by",
+            "modified_date": "Modified_date"
+        }
+    }
+}
+

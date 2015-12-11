@@ -1,0 +1,25 @@
+{
+    "dgdtoolApp": {
+        "service" : {
+            "home": {
+                "title": "Services",
+                "createLabel": "Créer un nouveau Service",
+                "createOrEditLabel": "Créer ou éditer un Service"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Service {{ id }} ?"
+            },
+            "detail": {
+                "title": "Service"
+            },
+            "service_name": "Service_name",
+            "description": "Description",
+            "status_id": "Status_id",
+            "created_by": "Created_by",
+            "created_date": "Created_date",
+            "modified_by": "Modified_by",
+            "modified_date": "Modified_date"
+        }
+    }
+}
+

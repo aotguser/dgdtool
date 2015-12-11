@@ -1,0 +1,26 @@
+{
+    "dgdtoolApp": {
+        "app" : {
+            "home": {
+                "title": "Apps",
+                "createLabel": "Créer un nouveau App",
+                "createOrEditLabel": "Créer ou éditer un App"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le App {{ id }} ?"
+            },
+            "detail": {
+                "title": "App"
+            },
+            "app_name": "App_name",
+            "app_type_id": "App_type_id",
+            "description": "Description",
+            "status_id": "Status_id",
+            "created_by": "Created_by",
+            "created_date": "Created_date",
+            "modified_by": "Modified_by",
+            "modified_date": "Modified_date"
+        }
+    }
+}
+

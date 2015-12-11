@@ -1,0 +1,78 @@
+
+<div>
+    <h2><span translate="dgdtoolApp.data_state.detail.title">Data_state</span> {{data_state.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th translate="entity.detail.field">Field</th>
+                <th translate="entity.detail.value">Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span translate="dgdtoolApp.data_state.data_state_name">Data_state_name</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{data_state.data_state_name}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="dgdtoolApp.data_state.description">Description</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{data_state.description}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="dgdtoolApp.data_state.status_id">Status_id</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{data_state.status_id}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="dgdtoolApp.data_state.created_by">Created_by</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{data_state.created_by}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="dgdtoolApp.data_state.created_date">Created_date</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{data_state.created_date | date:'mediumDate'}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="dgdtoolApp.data_state.modified_by">Modified_by</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{data_state.modified_by}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="dgdtoolApp.data_state.modified_date">Modified_date</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{data_state.modified_date | date:'mediumDate'}}</span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

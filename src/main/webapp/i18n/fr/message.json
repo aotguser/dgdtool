@@ -1,0 +1,29 @@
+{
+    "dgdtoolApp": {
+        "message" : {
+            "home": {
+                "title": "Messages",
+                "createLabel": "Créer un nouveau Message",
+                "createOrEditLabel": "Créer ou éditer un Message"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Message {{ id }} ?"
+            },
+            "detail": {
+                "title": "Message"
+            },
+            "sender_id": "Sender_id",
+            "recipient_id": "Recipient_id",
+            "sender_deleted": "Sender_deleted",
+            "recipient_deleted": "Recipient_deleted",
+            "recipient_viewed": "Recipient_viewed",
+            "message": "Message",
+            "status_id": "Status_id",
+            "created_by": "Created_by",
+            "created_date": "Created_date",
+            "modified_by": "Modified_by",
+            "modified_date": "Modified_date"
+        }
+    }
+}
+

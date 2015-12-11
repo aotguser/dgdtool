@@ -1,0 +1,27 @@
+{
+    "dgdtoolApp": {
+        "field_type" : {
+            "home": {
+                "title": "Field_types",
+                "createLabel": "Create a new Field_type",
+                "createOrEditLabel": "Create or edit a Field_type"
+            },
+            "created": "A new Field_type is created with identifier {{ param }}",
+            "updated": "A Field_type is updated with identifier {{ param }}",
+            "deleted": "A Field_type is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Field_type {{ id }}?"
+            },
+            "detail": {
+                "title": "Field_type"
+            },
+            "field_type_name": "Field_type_name",
+            "description": "Description",
+            "status_id": "Status_id",
+            "created_by": "Created_by",
+            "created_date": "Created_date",
+            "modified_by": "Modified_by",
+            "modified_date": "Modified_date"
+        }
+    }
+}

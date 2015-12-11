@@ -1,0 +1,86 @@
+
+<div>
+    <h2><span translate="dgdtoolApp.feedback.detail.title">Feedback</span> {{feedback.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th translate="entity.detail.field">Field</th>
+                <th translate="entity.detail.value">Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span translate="dgdtoolApp.feedback.feedback_type_id">Feedback_type_id</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{feedback.feedback_type_id}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="dgdtoolApp.feedback.feedback_name">Feedback_name</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{feedback.feedback_name}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="dgdtoolApp.feedback.description">Description</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{feedback.description}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="dgdtoolApp.feedback.status_id">Status_id</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{feedback.status_id}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="dgdtoolApp.feedback.created_by">Created_by</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{feedback.created_by}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="dgdtoolApp.feedback.created_date">Created_date</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{feedback.created_date | date:'mediumDate'}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="dgdtoolApp.feedback.modified_by">Modified_by</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{feedback.modified_by}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="dgdtoolApp.feedback.modified_date">Modified_date</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{feedback.modified_date | date:'mediumDate'}}</span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

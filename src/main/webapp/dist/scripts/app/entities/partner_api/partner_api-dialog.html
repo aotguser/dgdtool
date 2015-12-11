@@ -1,0 +1,194 @@
+
+<form name="editForm" role="form" novalidate ng-submit="save()" show-validation>
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="clear()">&times;</button>
+        <h4 class="modal-title" id="myPartner_apiLabel" translate="dgdtoolApp.partner_api.home.createOrEditLabel">Create or edit a Partner_api</h4>
+    </div>
+    <div class="modal-body">
+        <jh-alert-error></jh-alert-error>
+        <div class="form-group">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="partner_api.id" readonly />
+        </div>
+        <div class="form-group">
+            <label translate="dgdtoolApp.partner_api.partner_id" for="field_partner_id">Partner_id</label>
+            <input type="number" class="form-control" name="partner_id" id="field_partner_id"
+                    ng-model="partner_api.partner_id"
+                    required />
+            <div ng-show="editForm.partner_id.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.partner_id.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+                <p class="help-block"
+                    ng-show="editForm.partner_id.$error.number" translate="entity.validation.number">
+                    This field should be a number.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label translate="dgdtoolApp.partner_api.partner_req_url" for="field_partner_req_url">Partner_req_url</label>
+            <input type="text" class="form-control" name="partner_req_url" id="field_partner_req_url"
+                    ng-model="partner_api.partner_req_url"
+                    required ng-maxlength="2000" />
+            <div ng-show="editForm.partner_req_url.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.partner_req_url.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+                <p class="help-block"
+                    ng-show="editForm.partner_req_url.$error.maxlength" translate="entity.validation.maxlength" translate-value-max="2000">
+                    This field cannot be longer than 2000 characters.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label translate="dgdtoolApp.partner_api.partner_req_obj" for="field_partner_req_obj">Partner_req_obj</label>
+            <input type="text" class="form-control" name="partner_req_obj" id="field_partner_req_obj"
+                    ng-model="partner_api.partner_req_obj"
+                    required ng-maxlength="2000" />
+            <div ng-show="editForm.partner_req_obj.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.partner_req_obj.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+                <p class="help-block"
+                    ng-show="editForm.partner_req_obj.$error.maxlength" translate="entity.validation.maxlength" translate-value-max="2000">
+                    This field cannot be longer than 2000 characters.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label translate="dgdtoolApp.partner_api.partner_res_url" for="field_partner_res_url">Partner_res_url</label>
+            <input type="text" class="form-control" name="partner_res_url" id="field_partner_res_url"
+                    ng-model="partner_api.partner_res_url"
+                    required ng-maxlength="2000" />
+            <div ng-show="editForm.partner_res_url.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.partner_res_url.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+                <p class="help-block"
+                    ng-show="editForm.partner_res_url.$error.maxlength" translate="entity.validation.maxlength" translate-value-max="2000">
+                    This field cannot be longer than 2000 characters.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label translate="dgdtoolApp.partner_api.asp_method" for="field_asp_method">Asp_method</label>
+            <input type="text" class="form-control" name="asp_method" id="field_asp_method"
+                    ng-model="partner_api.asp_method"
+                    required ng-maxlength="200" />
+            <div ng-show="editForm.asp_method.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.asp_method.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+                <p class="help-block"
+                    ng-show="editForm.asp_method.$error.maxlength" translate="entity.validation.maxlength" translate-value-max="200">
+                    This field cannot be longer than 200 characters.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label translate="dgdtoolApp.partner_api.asp_app_id" for="field_asp_app_id">Asp_app_id</label>
+            <input type="number" class="form-control" name="asp_app_id" id="field_asp_app_id"
+                    ng-model="partner_api.asp_app_id"
+                     />
+        </div>
+        <div class="form-group">
+            <label translate="dgdtoolApp.partner_api.description" for="field_description">Description</label>
+            <input type="text" class="form-control" name="description" id="field_description"
+                    ng-model="partner_api.description"
+                    required ng-maxlength="2000" />
+            <div ng-show="editForm.description.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.description.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+                <p class="help-block"
+                    ng-show="editForm.description.$error.maxlength" translate="entity.validation.maxlength" translate-value-max="2000">
+                    This field cannot be longer than 2000 characters.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label translate="dgdtoolApp.partner_api.status_id" for="field_status_id">Status_id</label>
+            <input type="number" class="form-control" name="status_id" id="field_status_id"
+                    ng-model="partner_api.status_id"
+                    required />
+            <div ng-show="editForm.status_id.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.status_id.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+                <p class="help-block"
+                    ng-show="editForm.status_id.$error.number" translate="entity.validation.number">
+                    This field should be a number.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label translate="dgdtoolApp.partner_api.created_by" for="field_created_by">Created_by</label>
+            <input type="text" class="form-control" name="created_by" id="field_created_by"
+                    ng-model="partner_api.created_by"
+                    required ng-maxlength="200" />
+            <div ng-show="editForm.created_by.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.created_by.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+                <p class="help-block"
+                    ng-show="editForm.created_by.$error.maxlength" translate="entity.validation.maxlength" translate-value-max="200">
+                    This field cannot be longer than 200 characters.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label translate="dgdtoolApp.partner_api.created_date" for="field_created_date">Created_date</label>
+            <input type="date" class="form-control" name="created_date" id="field_created_date"
+                    ng-model="partner_api.created_date"
+                     />
+        </div>
+        <div class="form-group">
+            <label translate="dgdtoolApp.partner_api.modified_by" for="field_modified_by">Modified_by</label>
+            <input type="text" class="form-control" name="modified_by" id="field_modified_by"
+                    ng-model="partner_api.modified_by"
+                    required ng-maxlength="200" />
+            <div ng-show="editForm.modified_by.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.modified_by.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+                <p class="help-block"
+                    ng-show="editForm.modified_by.$error.maxlength" translate="entity.validation.maxlength" translate-value-max="200">
+                    This field cannot be longer than 200 characters.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label translate="dgdtoolApp.partner_api.modified_date" for="field_modified_date">Modified_date</label>
+            <input type="date" class="form-control" name="modified_date" id="field_modified_date"
+                    ng-model="partner_api.modified_date"
+                    required />
+            <div ng-show="editForm.modified_date.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.modified_date.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || editForm.$submitted" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

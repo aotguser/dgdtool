@@ -1,0 +1,27 @@
+{
+    "dgdtoolApp": {
+        "data_state" : {
+            "home": {
+                "title": "Data_states",
+                "createLabel": "Create a new Data_state",
+                "createOrEditLabel": "Create or edit a Data_state"
+            },
+            "created": "A new Data_state is created with identifier {{ param }}",
+            "updated": "A Data_state is updated with identifier {{ param }}",
+            "deleted": "A Data_state is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Data_state {{ id }}?"
+            },
+            "detail": {
+                "title": "Data_state"
+            },
+            "data_state_name": "Data_state_name",
+            "description": "Description",
+            "status_id": "Status_id",
+            "created_by": "Created_by",
+            "created_date": "Created_date",
+            "modified_by": "Modified_by",
+            "modified_date": "Modified_date"
+        }
+    }
+}

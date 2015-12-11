@@ -1,0 +1,25 @@
+{
+    "dgdtoolApp": {
+        "support_level" : {
+            "home": {
+                "title": "Support_levels",
+                "createLabel": "Créer un nouveau Support_level",
+                "createOrEditLabel": "Créer ou éditer un Support_level"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Support_level {{ id }} ?"
+            },
+            "detail": {
+                "title": "Support_level"
+            },
+            "support_level_name": "Support_level_name",
+            "description": "Description",
+            "status_id": "Status_id",
+            "created_by": "Created_by",
+            "created_date": "Created_date",
+            "modified_by": "Modified_by",
+            "modified_date": "Modified_date"
+        }
+    }
+}
+

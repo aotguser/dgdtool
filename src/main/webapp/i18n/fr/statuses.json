@@ -1,0 +1,26 @@
+{
+    "dgdtoolApp": {
+        "statuses" : {
+            "home": {
+                "title": "Statusess",
+                "createLabel": "Créer un nouveau Statuses",
+                "createOrEditLabel": "Créer ou éditer un Statuses"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Statuses {{ id }} ?"
+            },
+            "detail": {
+                "title": "Statuses"
+            },
+            "status_type_id": "Status_type_id",
+            "status_name": "Status_name",
+            "description": "Description",
+            "status_id": "Status_id",
+            "created_by": "Created_by",
+            "created_date": "Created_date",
+            "modified_by": "Modified_by",
+            "modified_date": "Modified_date"
+        }
+    }
+}
+

@@ -1,0 +1,27 @@
+{
+    "dgdtoolApp": {
+        "frequency" : {
+            "home": {
+                "title": "Frequencys",
+                "createLabel": "Create a new Frequency",
+                "createOrEditLabel": "Create or edit a Frequency"
+            },
+            "created": "A new Frequency is created with identifier {{ param }}",
+            "updated": "A Frequency is updated with identifier {{ param }}",
+            "deleted": "A Frequency is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Frequency {{ id }}?"
+            },
+            "detail": {
+                "title": "Frequency"
+            },
+            "frequency_name": "Frequency_name",
+            "description": "Description",
+            "status_id": "Status_id",
+            "created_by": "Created_by",
+            "created_date": "Created_date",
+            "modified_by": "Modified_by",
+            "modified_date": "Modified_date"
+        }
+    }
+}

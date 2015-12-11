@@ -1,0 +1,26 @@
+{
+    "dgdtoolApp": {
+        "ticket" : {
+            "home": {
+                "title": "Tickets",
+                "createLabel": "Créer un nouveau Ticket",
+                "createOrEditLabel": "Créer ou éditer un Ticket"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Ticket {{ id }} ?"
+            },
+            "detail": {
+                "title": "Ticket"
+            },
+            "ticket_ref_number": "Ticket_ref_number",
+            "ticket_created_date": "Ticket_created_date",
+            "description": "Description",
+            "status_id": "Status_id",
+            "created_by": "Created_by",
+            "created_date": "Created_date",
+            "modified_by": "Modified_by",
+            "modified_date": "Modified_date"
+        }
+    }
+}
+

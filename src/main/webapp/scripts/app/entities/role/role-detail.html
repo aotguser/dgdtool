@@ -1,0 +1,78 @@
+
+<div>
+    <h2><span translate="dgdtoolApp.role.detail.title">Role</span> {{role.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th translate="entity.detail.field">Field</th>
+                <th translate="entity.detail.value">Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span translate="dgdtoolApp.role.role_name">Role_name</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{role.role_name}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="dgdtoolApp.role.description">Description</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{role.description}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="dgdtoolApp.role.status_id">Status_id</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{role.status_id}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="dgdtoolApp.role.created_by">Created_by</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{role.created_by}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="dgdtoolApp.role.created_date">Created_date</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{role.created_date | date:'mediumDate'}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="dgdtoolApp.role.modified_by">Modified_by</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{role.modified_by}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="dgdtoolApp.role.modified_date">Modified_date</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{role.modified_date | date:'mediumDate'}}</span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

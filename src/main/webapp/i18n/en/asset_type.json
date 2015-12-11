@@ -1,0 +1,27 @@
+{
+    "dgdtoolApp": {
+        "asset_type" : {
+            "home": {
+                "title": "Asset_types",
+                "createLabel": "Create a new Asset_type",
+                "createOrEditLabel": "Create or edit a Asset_type"
+            },
+            "created": "A new Asset_type is created with identifier {{ param }}",
+            "updated": "A Asset_type is updated with identifier {{ param }}",
+            "deleted": "A Asset_type is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Asset_type {{ id }}?"
+            },
+            "detail": {
+                "title": "Asset_type"
+            },
+            "asset_type_name": "Asset_type_name",
+            "description": "Description",
+            "status_id": "Status_id",
+            "created_by": "Created_by",
+            "created_date": "Created_date",
+            "modified_by": "Modified_by",
+            "modified_date": "Modified_date"
+        }
+    }
+}

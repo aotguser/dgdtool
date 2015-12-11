@@ -1,0 +1,25 @@
+{
+    "dgdtoolApp": {
+        "role" : {
+            "home": {
+                "title": "Roles",
+                "createLabel": "Créer un nouveau Role",
+                "createOrEditLabel": "Créer ou éditer un Role"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Role {{ id }} ?"
+            },
+            "detail": {
+                "title": "Role"
+            },
+            "role_name": "Role_name",
+            "description": "Description",
+            "status_id": "Status_id",
+            "created_by": "Created_by",
+            "created_date": "Created_date",
+            "modified_by": "Modified_by",
+            "modified_date": "Modified_date"
+        }
+    }
+}
+

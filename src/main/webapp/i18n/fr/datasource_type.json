@@ -1,0 +1,25 @@
+{
+    "dgdtoolApp": {
+        "datasource_type" : {
+            "home": {
+                "title": "Datasource_types",
+                "createLabel": "Créer un nouveau Datasource_type",
+                "createOrEditLabel": "Créer ou éditer un Datasource_type"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Datasource_type {{ id }} ?"
+            },
+            "detail": {
+                "title": "Datasource_type"
+            },
+            "datasource_type_name": "Datasource_type_name",
+            "description": "Description",
+            "status_id": "Status_id",
+            "created_by": "Created_by",
+            "created_date": "Created_date",
+            "modified_by": "Modified_by",
+            "modified_date": "Modified_date"
+        }
+    }
+}
+

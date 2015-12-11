@@ -1,0 +1,27 @@
+{
+    "dgdtoolApp": {
+        "path" : {
+            "home": {
+                "title": "Paths",
+                "createLabel": "Create a new Path",
+                "createOrEditLabel": "Create or edit a Path"
+            },
+            "created": "A new Path is created with identifier {{ param }}",
+            "updated": "A Path is updated with identifier {{ param }}",
+            "deleted": "A Path is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Path {{ id }}?"
+            },
+            "detail": {
+                "title": "Path"
+            },
+            "path_name": "Path_name",
+            "description": "Description",
+            "status_id": "Status_id",
+            "created_by": "Created_by",
+            "created_date": "Created_date",
+            "modified_by": "Modified_by",
+            "modified_date": "Modified_date"
+        }
+    }
+}

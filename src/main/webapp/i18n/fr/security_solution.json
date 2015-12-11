@@ -1,0 +1,25 @@
+{
+    "dgdtoolApp": {
+        "security_solution" : {
+            "home": {
+                "title": "Security_solutions",
+                "createLabel": "Créer un nouveau Security_solution",
+                "createOrEditLabel": "Créer ou éditer un Security_solution"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Security_solution {{ id }} ?"
+            },
+            "detail": {
+                "title": "Security_solution"
+            },
+            "security_solution_name": "Security_solution_name",
+            "description": "Description",
+            "status_id": "Status_id",
+            "created_by": "Created_by",
+            "created_date": "Created_date",
+            "modified_by": "Modified_by",
+            "modified_date": "Modified_date"
+        }
+    }
+}
+

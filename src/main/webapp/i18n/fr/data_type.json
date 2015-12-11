@@ -1,0 +1,25 @@
+{
+    "dgdtoolApp": {
+        "data_type" : {
+            "home": {
+                "title": "Data_types",
+                "createLabel": "Créer un nouveau Data_type",
+                "createOrEditLabel": "Créer ou éditer un Data_type"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Data_type {{ id }} ?"
+            },
+            "detail": {
+                "title": "Data_type"
+            },
+            "data_type_name": "Data_type_name",
+            "description": "Description",
+            "status_id": "Status_id",
+            "created_by": "Created_by",
+            "created_date": "Created_date",
+            "modified_by": "Modified_by",
+            "modified_date": "Modified_date"
+        }
+    }
+}
+

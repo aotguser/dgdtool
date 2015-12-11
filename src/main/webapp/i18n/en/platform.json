@@ -1,0 +1,27 @@
+{
+    "dgdtoolApp": {
+        "platform" : {
+            "home": {
+                "title": "Platforms",
+                "createLabel": "Create a new Platform",
+                "createOrEditLabel": "Create or edit a Platform"
+            },
+            "created": "A new Platform is created with identifier {{ param }}",
+            "updated": "A Platform is updated with identifier {{ param }}",
+            "deleted": "A Platform is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Platform {{ id }}?"
+            },
+            "detail": {
+                "title": "Platform"
+            },
+            "platform_name": "Platform_name",
+            "description": "Description",
+            "status_id": "Status_id",
+            "created_by": "Created_by",
+            "created_date": "Created_date",
+            "modified_by": "Modified_by",
+            "modified_date": "Modified_date"
+        }
+    }
+}

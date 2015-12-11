@@ -1,0 +1,400 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>dgdtool</title>
+        <meta name="description" content="">
+        <meta name="google" value="notranslate">
+        <meta name="viewport" content="width=device-width">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css assets/styles/vendor.css -->
+        <!-- bower:css -->
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:css assets/styles/main.css -->
+        <link rel="stylesheet" href="assets/styles/main.css">
+        <!-- endbuild -->
+    </head>
+    <body ng-app="dgdtoolApp">
+        <!--[if lt IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div ng-show="{{ENV === 'dev'}}" class="development" ng-cloak=""></div>
+        <div ui-view="navbar" ng-cloak=""></div>
+        <div class="container">
+            <div class="well" ui-view="content"></div>
+
+            <div class="footer">
+                <p translate="footer">This is your footer</p>
+            </div>
+        </div>
+
+        <!-- Google Analytics: uncomment and change UA-XXXXX-X to be your site's ID.
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>-->
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="bower_components/modernizr/modernizr.js"></script>
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular-aria/angular-aria.js"></script>
+        <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+        <script src="bower_components/angular-cache-buster/angular-cache-buster.js"></script>
+        <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+        <script src="bower_components/angular-dynamic-locale/src/tmhDynamicLocale.js"></script>
+        <script src="bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+        <script src="bower_components/angular-resource/angular-resource.js"></script>
+        <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+        <script src="bower_components/angular-translate/angular-translate.js"></script>
+        <script src="bower_components/messageformat/messageformat.js"></script>
+        <script src="bower_components/angular-translate-interpolation-messageformat/angular-translate-interpolation-messageformat.js"></script>
+        <script src="bower_components/angular-translate-loader-partial/angular-translate-loader-partial.js"></script>
+        <script src="bower_components/angular-translate-storage-cookie/angular-translate-storage-cookie.js"></script>
+        <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="bower_components/json3/lib/json3.js"></script>
+        <script src="bower_components/ng-file-upload/ng-file-upload.js"></script>
+        <script src="bower_components/ngInfiniteScroll/build/ng-infinite-scroll.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+
+    <!-- build:js({.tmp,src/main/webapp}) scripts/app.js -->
+    <script src="scripts/app/app.js"></script>
+    <script src="scripts/app/app.constants.js"></script>
+    <script src="scripts/components/auth/auth.service.js"></script>
+    <script src="scripts/components/auth/principal.service.js"></script>
+    <script src="scripts/components/auth/authority.directive.js"></script>
+    <script src="scripts/components/auth/services/account.service.js"></script>
+    <script src="scripts/components/auth/services/activate.service.js"></script>
+    <script src="scripts/components/auth/services/password.service.js"></script>
+    <script src="scripts/components/auth/services/register.service.js"></script>
+    <script src="scripts/components/form/form.directive.js"></script>
+    <script src="scripts/components/form/maxbytes.directive.js"></script>
+    <script src="scripts/components/form/minbytes.directive.js"></script>
+    <script src="scripts/components/form/pager.directive.js"></script>
+    <script src="scripts/components/form/pagination.directive.js"></script>
+    <script src="scripts/components/admin/audits.service.js"></script>
+    <script src="scripts/components/admin/logs.service.js"></script>
+    <script src="scripts/components/admin/configuration.service.js"></script>
+    <script src="scripts/components/admin/monitoring.service.js"></script>
+    <script src="scripts/components/interceptor/auth.interceptor.js"></script>
+    <script src="scripts/components/interceptor/errorhandler.interceptor.js"></script>
+    <script src="scripts/components/interceptor/notification.interceptor.js"></script>
+    <script src="scripts/components/navbar/navbar.directive.js"></script>
+    <script src="scripts/components/navbar/navbar.controller.js"></script>
+    <script src="scripts/components/user/user.service.js"></script>
+    <script src="scripts/components/util/truncate.filter.js"></script>
+    <script src="scripts/components/util/base64.service.js"></script>
+    <script src="scripts/components/util/capitalize.filter.js"></script>
+    <script src="scripts/components/alert/alert.service.js"></script>
+    <script src="scripts/components/alert/alert.directive.js"></script>
+    <script src="scripts/components/util/parse-links.service.js"></script>
+    <script src="scripts/components/util/dateutil.service.js"></script>
+    <script src="scripts/app/account/account.js"></script>
+    <script src="scripts/app/account/activate/activate.js"></script>
+    <script src="scripts/app/account/activate/activate.controller.js"></script>
+    <script src="scripts/app/account/login/login.js"></script>
+    <script src="scripts/app/account/login/login.controller.js"></script>
+    <script src="scripts/app/account/password/password.js"></script>
+    <script src="scripts/app/account/password/password.controller.js"></script>
+    <script src="scripts/app/account/password/password.directive.js"></script>
+    <script src="scripts/app/account/register/register.js"></script>
+    <script src="scripts/app/account/register/register.controller.js"></script>
+    <script src="scripts/app/account/settings/settings.js"></script>
+    <script src="scripts/app/account/settings/settings.controller.js"></script>
+    <script src="scripts/app/account/reset/finish/reset.finish.controller.js"></script>
+    <script src="scripts/app/account/reset/finish/reset.finish.js"></script>
+    <script src="scripts/app/account/reset/request/reset.request.controller.js"></script>
+    <script src="scripts/app/account/reset/request/reset.request.js"></script>
+    <script src="scripts/app/admin/admin.js"></script>
+    <script src="scripts/app/admin/audits/audits.js"></script>
+    <script src="scripts/app/admin/audits/audits.controller.js"></script>
+    <script src="scripts/app/admin/configuration/configuration.js"></script>
+    <script src="scripts/app/admin/configuration/configuration.controller.js"></script>
+    <script src="scripts/app/admin/docs/docs.js"></script>
+    <script src="scripts/app/admin/health/health.js"></script>
+    <script src="scripts/app/admin/health/health.controller.js"></script>
+    <script src="scripts/app/admin/health/health.modal.controller.js"></script>
+    <script src="scripts/app/admin/logs/logs.js"></script>
+    <script src="scripts/app/admin/logs/logs.controller.js"></script>
+    <script src="scripts/app/admin/metrics/metrics.js"></script>
+    <script src="scripts/app/admin/metrics/metrics.controller.js"></script>
+    <script src="scripts/app/admin/metrics/metrics.modal.controller.js"></script>
+    <script src="scripts/app/admin/user-management/user-management-detail.controller.js"></script>
+    <script src="scripts/app/admin/user-management/user-management.controller.js"></script>
+    <script src="scripts/app/admin/user-management/user-management.js"></script>
+    <script src="scripts/app/entities/entity.js"></script>
+    <script src="scripts/app/error/error.js"></script>
+    <script src="scripts/app/main/main.js"></script>
+    <script src="scripts/app/main/main.controller.js"></script>
+    <script src="bower_components/messageformat/locale/en.js"></script>
+    <script src="bower_components/messageformat/locale/fr.js"></script>
+    <script src="scripts/components/language/language.service.js"></script>
+    <script src="scripts/components/language/language.controller.js"></script>
+    <script src="scripts/app/account/social/directive/social.directive.js"></script>
+    <script src="scripts/app/account/social/social-register.js"></script>
+    <script src="scripts/app/account/social/social-register.controller.js"></script>
+    <script src="scripts/app/account/social/social.service.js"></script>
+    <script src="scripts/components/auth/services/sessions.service.js"></script>
+    <script src="scripts/components/auth/provider/auth.session.service.js"></script>
+    <script src="scripts/app/account/sessions/sessions.js"></script>
+    <script src="scripts/app/account/sessions/sessions.controller.js"></script>
+    <script src="scripts/app/entities/status_type/status_type.js"></script>
+    <script src="scripts/app/entities/status_type/status_type.controller.js"></script>
+    <script src="scripts/app/entities/status_type/status_type-dialog.controller.js"></script>
+    <script src="scripts/app/entities/status_type/status_type-detail.controller.js"></script>
+    <script src="scripts/components/entities/status_type/status_type.service.js"></script>
+    <script src="scripts/components/entities/status_type/status_type.search.service.js"></script>
+    <script src="scripts/app/entities/package_type/package_type.js"></script>
+    <script src="scripts/app/entities/package_type/package_type.controller.js"></script>
+    <script src="scripts/app/entities/package_type/package_type-dialog.controller.js"></script>
+    <script src="scripts/app/entities/package_type/package_type-detail.controller.js"></script>
+    <script src="scripts/components/entities/package_type/package_type.service.js"></script>
+    <script src="scripts/components/entities/package_type/package_type.search.service.js"></script>
+    <script src="scripts/app/entities/packages/packages.js"></script>
+    <script src="scripts/app/entities/packages/packages.controller.js"></script>
+    <script src="scripts/app/entities/packages/packages-dialog.controller.js"></script>
+    <script src="scripts/app/entities/packages/packages-detail.controller.js"></script>
+    <script src="scripts/components/entities/packages/packages.service.js"></script>
+    <script src="scripts/components/entities/packages/packages.search.service.js"></script>
+    <script src="scripts/app/entities/package_version/package_version.js"></script>
+    <script src="scripts/app/entities/package_version/package_version.controller.js"></script>
+    <script src="scripts/app/entities/package_version/package_version-dialog.controller.js"></script>
+    <script src="scripts/app/entities/package_version/package_version-detail.controller.js"></script>
+    <script src="scripts/components/entities/package_version/package_version.service.js"></script>
+    <script src="scripts/components/entities/package_version/package_version.search.service.js"></script>
+    <script src="scripts/app/entities/service/service.js"></script>
+    <script src="scripts/app/entities/service/service.controller.js"></script>
+    <script src="scripts/app/entities/service/service-dialog.controller.js"></script>
+    <script src="scripts/app/entities/service/service-detail.controller.js"></script>
+    <script src="scripts/components/entities/service/service.service.js"></script>
+    <script src="scripts/components/entities/service/service.search.service.js"></script>
+    <script src="scripts/app/entities/app_type/app_type.js"></script>
+    <script src="scripts/app/entities/app_type/app_type.controller.js"></script>
+    <script src="scripts/app/entities/app_type/app_type-dialog.controller.js"></script>
+    <script src="scripts/app/entities/app_type/app_type-detail.controller.js"></script>
+    <script src="scripts/components/entities/app_type/app_type.service.js"></script>
+    <script src="scripts/components/entities/app_type/app_type.search.service.js"></script>
+    <script src="scripts/app/entities/app/app.js"></script>
+    <script src="scripts/app/entities/app/app.controller.js"></script>
+    <script src="scripts/app/entities/app/app-dialog.controller.js"></script>
+    <script src="scripts/app/entities/app/app-detail.controller.js"></script>
+    <script src="scripts/components/entities/app/app.service.js"></script>
+    <script src="scripts/components/entities/app/app.search.service.js"></script>
+    <script src="scripts/app/entities/initiative/initiative.js"></script>
+    <script src="scripts/app/entities/initiative/initiative.controller.js"></script>
+    <script src="scripts/app/entities/initiative/initiative-dialog.controller.js"></script>
+    <script src="scripts/app/entities/initiative/initiative-detail.controller.js"></script>
+    <script src="scripts/components/entities/initiative/initiative.service.js"></script>
+    <script src="scripts/components/entities/initiative/initiative.search.service.js"></script>
+    <script src="scripts/app/entities/initiative_type/initiative_type.js"></script>
+    <script src="scripts/app/entities/initiative_type/initiative_type.controller.js"></script>
+    <script src="scripts/app/entities/initiative_type/initiative_type-dialog.controller.js"></script>
+    <script src="scripts/app/entities/initiative_type/initiative_type-detail.controller.js"></script>
+    <script src="scripts/components/entities/initiative_type/initiative_type.service.js"></script>
+    <script src="scripts/components/entities/initiative_type/initiative_type.search.service.js"></script>
+    <script src="scripts/app/entities/menu/menu.js"></script>
+    <script src="scripts/app/entities/menu/menu.controller.js"></script>
+    <script src="scripts/app/entities/menu/menu-dialog.controller.js"></script>
+    <script src="scripts/app/entities/menu/menu-detail.controller.js"></script>
+    <script src="scripts/components/entities/menu/menu.service.js"></script>
+    <script src="scripts/components/entities/menu/menu.search.service.js"></script>
+    <script src="scripts/app/entities/message/message.js"></script>
+    <script src="scripts/app/entities/message/message.controller.js"></script>
+    <script src="scripts/app/entities/message/message-dialog.controller.js"></script>
+    <script src="scripts/app/entities/message/message-detail.controller.js"></script>
+    <script src="scripts/components/entities/message/message.service.js"></script>
+    <script src="scripts/components/entities/message/message.search.service.js"></script>
+    <script src="scripts/app/entities/partner/partner.js"></script>
+    <script src="scripts/app/entities/partner/partner.controller.js"></script>
+    <script src="scripts/app/entities/partner/partner-dialog.controller.js"></script>
+    <script src="scripts/app/entities/partner/partner-detail.controller.js"></script>
+    <script src="scripts/components/entities/partner/partner.service.js"></script>
+    <script src="scripts/components/entities/partner/partner.search.service.js"></script>
+    <script src="scripts/app/entities/partner_api/partner_api.js"></script>
+    <script src="scripts/app/entities/partner_api/partner_api.controller.js"></script>
+    <script src="scripts/app/entities/partner_api/partner_api-dialog.controller.js"></script>
+    <script src="scripts/app/entities/partner_api/partner_api-detail.controller.js"></script>
+    <script src="scripts/components/entities/partner_api/partner_api.service.js"></script>
+    <script src="scripts/components/entities/partner_api/partner_api.search.service.js"></script>
+    <script src="scripts/app/entities/project/project.js"></script>
+    <script src="scripts/app/entities/project/project.controller.js"></script>
+    <script src="scripts/app/entities/project/project-dialog.controller.js"></script>
+    <script src="scripts/app/entities/project/project-detail.controller.js"></script>
+    <script src="scripts/components/entities/project/project.service.js"></script>
+    <script src="scripts/components/entities/project/project.search.service.js"></script>
+    <script src="scripts/app/entities/project_team/project_team.js"></script>
+    <script src="scripts/app/entities/project_team/project_team.controller.js"></script>
+    <script src="scripts/app/entities/project_team/project_team-dialog.controller.js"></script>
+    <script src="scripts/app/entities/project_team/project_team-detail.controller.js"></script>
+    <script src="scripts/components/entities/project_team/project_team.service.js"></script>
+    <script src="scripts/components/entities/project_team/project_team.search.service.js"></script>
+    <script src="scripts/app/entities/resource/resource.js"></script>
+    <script src="scripts/app/entities/resource/resource.controller.js"></script>
+    <script src="scripts/app/entities/resource/resource-dialog.controller.js"></script>
+    <script src="scripts/app/entities/resource/resource-detail.controller.js"></script>
+    <script src="scripts/components/entities/resource/resource.service.js"></script>
+    <script src="scripts/components/entities/resource/resource.search.service.js"></script>
+    <script src="scripts/app/entities/role/role.js"></script>
+    <script src="scripts/app/entities/role/role.controller.js"></script>
+    <script src="scripts/app/entities/role/role-dialog.controller.js"></script>
+    <script src="scripts/app/entities/role/role-detail.controller.js"></script>
+    <script src="scripts/components/entities/role/role.service.js"></script>
+    <script src="scripts/components/entities/role/role.search.service.js"></script>
+    <script src="scripts/app/entities/support_level/support_level.js"></script>
+    <script src="scripts/app/entities/support_level/support_level.controller.js"></script>
+    <script src="scripts/app/entities/support_level/support_level-dialog.controller.js"></script>
+    <script src="scripts/app/entities/support_level/support_level-detail.controller.js"></script>
+    <script src="scripts/components/entities/support_level/support_level.service.js"></script>
+    <script src="scripts/components/entities/support_level/support_level.search.service.js"></script>
+    <script src="scripts/app/entities/ticket/ticket.js"></script>
+    <script src="scripts/app/entities/ticket/ticket.controller.js"></script>
+    <script src="scripts/app/entities/ticket/ticket-dialog.controller.js"></script>
+    <script src="scripts/app/entities/ticket/ticket-detail.controller.js"></script>
+    <script src="scripts/components/entities/ticket/ticket.service.js"></script>
+    <script src="scripts/components/entities/ticket/ticket.search.service.js"></script>
+    <script src="scripts/app/entities/project_phase/project_phase.js"></script>
+    <script src="scripts/app/entities/project_phase/project_phase.controller.js"></script>
+    <script src="scripts/app/entities/project_phase/project_phase-dialog.controller.js"></script>
+    <script src="scripts/app/entities/project_phase/project_phase-detail.controller.js"></script>
+    <script src="scripts/components/entities/project_phase/project_phase.service.js"></script>
+    <script src="scripts/components/entities/project_phase/project_phase.search.service.js"></script>
+    <script src="scripts/app/entities/datasource_type/datasource_type.js"></script>
+    <script src="scripts/app/entities/datasource_type/datasource_type.controller.js"></script>
+    <script src="scripts/app/entities/datasource_type/datasource_type-dialog.controller.js"></script>
+    <script src="scripts/app/entities/datasource_type/datasource_type-detail.controller.js"></script>
+    <script src="scripts/components/entities/datasource_type/datasource_type.service.js"></script>
+    <script src="scripts/components/entities/datasource_type/datasource_type.search.service.js"></script>
+    <script src="scripts/app/entities/decision/decision.js"></script>
+    <script src="scripts/app/entities/decision/decision.controller.js"></script>
+    <script src="scripts/app/entities/decision/decision-dialog.controller.js"></script>
+    <script src="scripts/app/entities/decision/decision-detail.controller.js"></script>
+    <script src="scripts/components/entities/decision/decision.service.js"></script>
+    <script src="scripts/components/entities/decision/decision.search.service.js"></script>
+    <script src="scripts/app/entities/frequency/frequency.js"></script>
+    <script src="scripts/app/entities/frequency/frequency.controller.js"></script>
+    <script src="scripts/app/entities/frequency/frequency-dialog.controller.js"></script>
+    <script src="scripts/app/entities/frequency/frequency-detail.controller.js"></script>
+    <script src="scripts/components/entities/frequency/frequency.service.js"></script>
+    <script src="scripts/components/entities/frequency/frequency.search.service.js"></script>
+    <script src="scripts/app/entities/data_type/data_type.js"></script>
+    <script src="scripts/app/entities/data_type/data_type.controller.js"></script>
+    <script src="scripts/app/entities/data_type/data_type-dialog.controller.js"></script>
+    <script src="scripts/app/entities/data_type/data_type-detail.controller.js"></script>
+    <script src="scripts/components/entities/data_type/data_type.service.js"></script>
+    <script src="scripts/components/entities/data_type/data_type.search.service.js"></script>
+    <script src="scripts/app/entities/field_type/field_type.js"></script>
+    <script src="scripts/app/entities/field_type/field_type.controller.js"></script>
+    <script src="scripts/app/entities/field_type/field_type-dialog.controller.js"></script>
+    <script src="scripts/app/entities/field_type/field_type-detail.controller.js"></script>
+    <script src="scripts/components/entities/field_type/field_type.service.js"></script>
+    <script src="scripts/components/entities/field_type/field_type.search.service.js"></script>
+    <script src="scripts/app/entities/security_solution/security_solution.js"></script>
+    <script src="scripts/app/entities/security_solution/security_solution.controller.js"></script>
+    <script src="scripts/app/entities/security_solution/security_solution-dialog.controller.js"></script>
+    <script src="scripts/app/entities/security_solution/security_solution-detail.controller.js"></script>
+    <script src="scripts/components/entities/security_solution/security_solution.service.js"></script>
+    <script src="scripts/components/entities/security_solution/security_solution.search.service.js"></script>
+    <script src="scripts/app/entities/data_state/data_state.js"></script>
+    <script src="scripts/app/entities/data_state/data_state.controller.js"></script>
+    <script src="scripts/app/entities/data_state/data_state-dialog.controller.js"></script>
+    <script src="scripts/app/entities/data_state/data_state-detail.controller.js"></script>
+    <script src="scripts/components/entities/data_state/data_state.service.js"></script>
+    <script src="scripts/components/entities/data_state/data_state.search.service.js"></script>
+    <script src="scripts/app/entities/asset_type/asset_type.js"></script>
+    <script src="scripts/app/entities/asset_type/asset_type.controller.js"></script>
+    <script src="scripts/app/entities/asset_type/asset_type-dialog.controller.js"></script>
+    <script src="scripts/app/entities/asset_type/asset_type-detail.controller.js"></script>
+    <script src="scripts/components/entities/asset_type/asset_type.service.js"></script>
+    <script src="scripts/components/entities/asset_type/asset_type.search.service.js"></script>
+    <script src="scripts/app/entities/end_state_designation/end_state_designation.js"></script>
+    <script src="scripts/app/entities/end_state_designation/end_state_designation.controller.js"></script>
+    <script src="scripts/app/entities/end_state_designation/end_state_designation-dialog.controller.js"></script>
+    <script src="scripts/app/entities/end_state_designation/end_state_designation-detail.controller.js"></script>
+    <script src="scripts/components/entities/end_state_designation/end_state_designation.service.js"></script>
+    <script src="scripts/components/entities/end_state_designation/end_state_designation.search.service.js"></script>
+    <script src="scripts/app/entities/server_type/server_type.js"></script>
+    <script src="scripts/app/entities/server_type/server_type.controller.js"></script>
+    <script src="scripts/app/entities/server_type/server_type-dialog.controller.js"></script>
+    <script src="scripts/app/entities/server_type/server_type-detail.controller.js"></script>
+    <script src="scripts/components/entities/server_type/server_type.service.js"></script>
+    <script src="scripts/components/entities/server_type/server_type.search.service.js"></script>
+    <script src="scripts/app/entities/environment/environment.js"></script>
+    <script src="scripts/app/entities/environment/environment.controller.js"></script>
+    <script src="scripts/app/entities/environment/environment-dialog.controller.js"></script>
+    <script src="scripts/app/entities/environment/environment-detail.controller.js"></script>
+    <script src="scripts/components/entities/environment/environment.service.js"></script>
+    <script src="scripts/components/entities/environment/environment.search.service.js"></script>
+    <script src="scripts/app/entities/platform/platform.js"></script>
+    <script src="scripts/app/entities/platform/platform.controller.js"></script>
+    <script src="scripts/app/entities/platform/platform-dialog.controller.js"></script>
+    <script src="scripts/app/entities/platform/platform-detail.controller.js"></script>
+    <script src="scripts/components/entities/platform/platform.service.js"></script>
+    <script src="scripts/components/entities/platform/platform.search.service.js"></script>
+    <script src="scripts/app/entities/os_type/os_type.js"></script>
+    <script src="scripts/app/entities/os_type/os_type.controller.js"></script>
+    <script src="scripts/app/entities/os_type/os_type-dialog.controller.js"></script>
+    <script src="scripts/app/entities/os_type/os_type-detail.controller.js"></script>
+    <script src="scripts/components/entities/os_type/os_type.service.js"></script>
+    <script src="scripts/components/entities/os_type/os_type.search.service.js"></script>
+    <script src="scripts/app/entities/os_version/os_version.js"></script>
+    <script src="scripts/app/entities/os_version/os_version.controller.js"></script>
+    <script src="scripts/app/entities/os_version/os_version-dialog.controller.js"></script>
+    <script src="scripts/app/entities/os_version/os_version-detail.controller.js"></script>
+    <script src="scripts/components/entities/os_version/os_version.service.js"></script>
+    <script src="scripts/components/entities/os_version/os_version.search.service.js"></script>
+    <script src="scripts/app/entities/server_role/server_role.js"></script>
+    <script src="scripts/app/entities/server_role/server_role.controller.js"></script>
+    <script src="scripts/app/entities/server_role/server_role-dialog.controller.js"></script>
+    <script src="scripts/app/entities/server_role/server_role-detail.controller.js"></script>
+    <script src="scripts/components/entities/server_role/server_role.service.js"></script>
+    <script src="scripts/components/entities/server_role/server_role.search.service.js"></script>
+    <script src="scripts/app/entities/license_type/license_type.js"></script>
+    <script src="scripts/app/entities/license_type/license_type.controller.js"></script>
+    <script src="scripts/app/entities/license_type/license_type-dialog.controller.js"></script>
+    <script src="scripts/app/entities/license_type/license_type-detail.controller.js"></script>
+    <script src="scripts/components/entities/license_type/license_type.service.js"></script>
+    <script src="scripts/components/entities/license_type/license_type.search.service.js"></script>
+    <script src="scripts/app/entities/stage/stage.js"></script>
+    <script src="scripts/app/entities/stage/stage.controller.js"></script>
+    <script src="scripts/app/entities/stage/stage-dialog.controller.js"></script>
+    <script src="scripts/app/entities/stage/stage-detail.controller.js"></script>
+    <script src="scripts/components/entities/stage/stage.service.js"></script>
+    <script src="scripts/components/entities/stage/stage.search.service.js"></script>
+    <script src="scripts/app/entities/path/path.js"></script>
+    <script src="scripts/app/entities/path/path.controller.js"></script>
+    <script src="scripts/app/entities/path/path-dialog.controller.js"></script>
+    <script src="scripts/app/entities/path/path-detail.controller.js"></script>
+    <script src="scripts/components/entities/path/path.service.js"></script>
+    <script src="scripts/components/entities/path/path.search.service.js"></script>
+    <script src="scripts/app/entities/feedback/feedback.js"></script>
+    <script src="scripts/app/entities/feedback/feedback.controller.js"></script>
+    <script src="scripts/app/entities/feedback/feedback-dialog.controller.js"></script>
+    <script src="scripts/app/entities/feedback/feedback-detail.controller.js"></script>
+    <script src="scripts/components/entities/feedback/feedback.service.js"></script>
+    <script src="scripts/components/entities/feedback/feedback.search.service.js"></script>
+    <script src="scripts/app/entities/feedback_type/feedback_type.js"></script>
+    <script src="scripts/app/entities/feedback_type/feedback_type.controller.js"></script>
+    <script src="scripts/app/entities/feedback_type/feedback_type-dialog.controller.js"></script>
+    <script src="scripts/app/entities/feedback_type/feedback_type-detail.controller.js"></script>
+    <script src="scripts/components/entities/feedback_type/feedback_type.service.js"></script>
+    <script src="scripts/components/entities/feedback_type/feedback_type.search.service.js"></script>
+    <script src="scripts/app/entities/statuses/statuses.js"></script>
+    <script src="scripts/app/entities/statuses/statuses.controller.js"></script>
+    <script src="scripts/app/entities/statuses/statuses-dialog.controller.js"></script>
+    <script src="scripts/app/entities/statuses/statuses-detail.controller.js"></script>
+    <script src="scripts/components/entities/statuses/statuses.service.js"></script>
+    <script src="scripts/components/entities/statuses/statuses.search.service.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

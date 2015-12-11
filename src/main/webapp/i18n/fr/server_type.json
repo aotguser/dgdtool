@@ -1,0 +1,25 @@
+{
+    "dgdtoolApp": {
+        "server_type" : {
+            "home": {
+                "title": "Server_types",
+                "createLabel": "Créer un nouveau Server_type",
+                "createOrEditLabel": "Créer ou éditer un Server_type"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Server_type {{ id }} ?"
+            },
+            "detail": {
+                "title": "Server_type"
+            },
+            "server_type_name": "Server_type_name",
+            "description": "Description",
+            "status_id": "Status_id",
+            "created_by": "Created_by",
+            "created_date": "Created_date",
+            "modified_by": "Modified_by",
+            "modified_date": "Modified_date"
+        }
+    }
+}
+

@@ -1,0 +1,25 @@
+{
+    "dgdtoolApp": {
+        "path" : {
+            "home": {
+                "title": "Paths",
+                "createLabel": "Créer un nouveau Path",
+                "createOrEditLabel": "Créer ou éditer un Path"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Path {{ id }} ?"
+            },
+            "detail": {
+                "title": "Path"
+            },
+            "path_name": "Path_name",
+            "description": "Description",
+            "status_id": "Status_id",
+            "created_by": "Created_by",
+            "created_date": "Created_date",
+            "modified_by": "Modified_by",
+            "modified_date": "Modified_date"
+        }
+    }
+}
+

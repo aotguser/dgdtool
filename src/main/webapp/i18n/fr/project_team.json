@@ -1,0 +1,30 @@
+{
+    "dgdtoolApp": {
+        "project_team" : {
+            "home": {
+                "title": "Project_teams",
+                "createLabel": "Créer un nouveau Project_team",
+                "createOrEditLabel": "Créer ou éditer un Project_team"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Project_team {{ id }} ?"
+            },
+            "detail": {
+                "title": "Project_team"
+            },
+            "project_id": "Project_id",
+            "resource_id": "Resource_id",
+            "role_id": "Role_id",
+            "support_level": "Support_level",
+            "est_hours": "Est_hours",
+            "assigned_date": "Assigned_date",
+            "description": "Description",
+            "status_id": "Status_id",
+            "created_by": "Created_by",
+            "created_date": "Created_date",
+            "modified_by": "Modified_by",
+            "modified_date": "Modified_date"
+        }
+    }
+}
+

@@ -1,0 +1,35 @@
+{
+    "dgdtoolApp": {
+        "project" : {
+            "home": {
+                "title": "Projects",
+                "createLabel": "Créer un nouveau Project",
+                "createOrEditLabel": "Créer ou éditer un Project"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Project {{ id }} ?"
+            },
+            "detail": {
+                "title": "Project"
+            },
+            "requestor_id": "Requestor_id",
+            "associated_project_id": "Associated_project_id",
+            "initiative_id": "Initiative_id",
+            "ticket_id": "Ticket_id",
+            "service_id": "Service_id",
+            "app_id": "App_id",
+            "package_id": "Package_id",
+            "legacy_owner": "Legacy_owner",
+            "business_unit": "Business_unit",
+            "planned_start_date": "Planned_start_date",
+            "planned_end_date": "Planned_end_date",
+            "description": "Description",
+            "status_id": "Status_id",
+            "created_by": "Created_by",
+            "created_date": "Created_date",
+            "modified_by": "Modified_by",
+            "modified_date": "Modified_date"
+        }
+    }
+}
+

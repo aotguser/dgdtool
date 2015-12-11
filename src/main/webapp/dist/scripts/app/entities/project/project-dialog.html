@@ -1,0 +1,202 @@
+
+<form name="editForm" role="form" novalidate ng-submit="save()" show-validation>
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="clear()">&times;</button>
+        <h4 class="modal-title" id="myProjectLabel" translate="dgdtoolApp.project.home.createOrEditLabel">Create or edit a Project</h4>
+    </div>
+    <div class="modal-body">
+        <jh-alert-error></jh-alert-error>
+        <div class="form-group">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="project.id" readonly />
+        </div>
+        <div class="form-group">
+            <label translate="dgdtoolApp.project.requestor_id" for="field_requestor_id">Requestor_id</label>
+            <input type="number" class="form-control" name="requestor_id" id="field_requestor_id"
+                    ng-model="project.requestor_id"
+                    required />
+            <div ng-show="editForm.requestor_id.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.requestor_id.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+                <p class="help-block"
+                    ng-show="editForm.requestor_id.$error.number" translate="entity.validation.number">
+                    This field should be a number.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label translate="dgdtoolApp.project.associated_project_id" for="field_associated_project_id">Associated_project_id</label>
+            <input type="number" class="form-control" name="associated_project_id" id="field_associated_project_id"
+                    ng-model="project.associated_project_id"
+                     />
+        </div>
+        <div class="form-group">
+            <label translate="dgdtoolApp.project.initiative_id" for="field_initiative_id">Initiative_id</label>
+            <input type="number" class="form-control" name="initiative_id" id="field_initiative_id"
+                    ng-model="project.initiative_id"
+                     />
+        </div>
+        <div class="form-group">
+            <label translate="dgdtoolApp.project.ticket_id" for="field_ticket_id">Ticket_id</label>
+            <input type="number" class="form-control" name="ticket_id" id="field_ticket_id"
+                    ng-model="project.ticket_id"
+                     />
+        </div>
+        <div class="form-group">
+            <label translate="dgdtoolApp.project.service_id" for="field_service_id">Service_id</label>
+            <input type="number" class="form-control" name="service_id" id="field_service_id"
+                    ng-model="project.service_id"
+                     />
+        </div>
+        <div class="form-group">
+            <label translate="dgdtoolApp.project.app_id" for="field_app_id">App_id</label>
+            <input type="number" class="form-control" name="app_id" id="field_app_id"
+                    ng-model="project.app_id"
+                     />
+        </div>
+        <div class="form-group">
+            <label translate="dgdtoolApp.project.package_id" for="field_package_id">Package_id</label>
+            <input type="number" class="form-control" name="package_id" id="field_package_id"
+                    ng-model="project.package_id"
+                     />
+        </div>
+        <div class="form-group">
+            <label translate="dgdtoolApp.project.legacy_owner" for="field_legacy_owner">Legacy_owner</label>
+            <input type="text" class="form-control" name="legacy_owner" id="field_legacy_owner"
+                    ng-model="project.legacy_owner"
+                    ng-maxlength="200" />
+            <div ng-show="editForm.legacy_owner.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.legacy_owner.$error.maxlength" translate="entity.validation.maxlength" translate-value-max="200">
+                    This field cannot be longer than 200 characters.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label translate="dgdtoolApp.project.business_unit" for="field_business_unit">Business_unit</label>
+            <input type="text" class="form-control" name="business_unit" id="field_business_unit"
+                    ng-model="project.business_unit"
+                    ng-maxlength="200" />
+            <div ng-show="editForm.business_unit.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.business_unit.$error.maxlength" translate="entity.validation.maxlength" translate-value-max="200">
+                    This field cannot be longer than 200 characters.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label translate="dgdtoolApp.project.planned_start_date" for="field_planned_start_date">Planned_start_date</label>
+            <input type="datetime-local" class="form-control" name="planned_start_date" id="field_planned_start_date"
+                    ng-model="project.planned_start_date"
+                     />
+        </div>
+        <div class="form-group">
+            <label translate="dgdtoolApp.project.planned_end_date" for="field_planned_end_date">Planned_end_date</label>
+            <input type="datetime-local" class="form-control" name="planned_end_date" id="field_planned_end_date"
+                    ng-model="project.planned_end_date"
+                     />
+        </div>
+        <div class="form-group">
+            <label translate="dgdtoolApp.project.description" for="field_description">Description</label>
+            <input type="text" class="form-control" name="description" id="field_description"
+                    ng-model="project.description"
+                    required ng-maxlength="2000" />
+            <div ng-show="editForm.description.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.description.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+                <p class="help-block"
+                    ng-show="editForm.description.$error.maxlength" translate="entity.validation.maxlength" translate-value-max="2000">
+                    This field cannot be longer than 2000 characters.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label translate="dgdtoolApp.project.status_id" for="field_status_id">Status_id</label>
+            <input type="number" class="form-control" name="status_id" id="field_status_id"
+                    ng-model="project.status_id"
+                    required />
+            <div ng-show="editForm.status_id.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.status_id.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+                <p class="help-block"
+                    ng-show="editForm.status_id.$error.number" translate="entity.validation.number">
+                    This field should be a number.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label translate="dgdtoolApp.project.created_by" for="field_created_by">Created_by</label>
+            <input type="text" class="form-control" name="created_by" id="field_created_by"
+                    ng-model="project.created_by"
+                    required ng-maxlength="200" />
+            <div ng-show="editForm.created_by.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.created_by.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+                <p class="help-block"
+                    ng-show="editForm.created_by.$error.maxlength" translate="entity.validation.maxlength" translate-value-max="200">
+                    This field cannot be longer than 200 characters.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label translate="dgdtoolApp.project.created_date" for="field_created_date">Created_date</label>
+            <input type="date" class="form-control" name="created_date" id="field_created_date"
+                    ng-model="project.created_date"
+                    required />
+            <div ng-show="editForm.created_date.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.created_date.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label translate="dgdtoolApp.project.modified_by" for="field_modified_by">Modified_by</label>
+            <input type="text" class="form-control" name="modified_by" id="field_modified_by"
+                    ng-model="project.modified_by"
+                    required ng-maxlength="200" />
+            <div ng-show="editForm.modified_by.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.modified_by.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+                <p class="help-block"
+                    ng-show="editForm.modified_by.$error.maxlength" translate="entity.validation.maxlength" translate-value-max="200">
+                    This field cannot be longer than 200 characters.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label translate="dgdtoolApp.project.modified_date" for="field_modified_date">Modified_date</label>
+            <input type="date" class="form-control" name="modified_date" id="field_modified_date"
+                    ng-model="project.modified_date"
+                    required />
+            <div ng-show="editForm.modified_date.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.modified_date.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || editForm.$submitted" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

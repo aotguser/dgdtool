@@ -1,0 +1,102 @@
+<div>
+    <h2 translate="dgdtoolApp.feedback_type.home.title">Feedback_types</h2>
+    <jh-alert></jh-alert>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <button class="btn btn-primary" ui-sref="feedback_type.new">
+                    <span class="glyphicon glyphicon-flash"></span> <span translate="dgdtoolApp.feedback_type.home.createLabel">Create a new Feedback_type</span>
+                </button>
+            </div>
+            <div class="col-md-8">
+                <form name="searchForm" class="form-inline">
+                    <div class="form-group">
+                        <input type="text" class="form-control" ng-model="searchQuery" id="searchQuery" placeholder="query">
+                    </div>
+                    <button class="btn btn-info" ng-click="search()"><span class="glyphicon glyphicon-search"></span> <span>Search a Feedback_type</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="deleteFeedback_typeConfirmation">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="deleteForm" ng-submit="confirmDelete(feedback_type.id)">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                                ng-click="clear()">&times;</button>
+                        <h4 class="modal-title" translate="entity.delete.title">Confirm delete operation</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p translate="dgdtoolApp.feedback_type.delete.question" translate-values="{id: '{{feedback_type.id}}'}">Are you sure you want to delete this Feedback_type?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+                        </button>
+                        <button type="submit" ng-disabled="deleteForm.$invalid" class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="global.field.id">ID</th>
+                    <th translate="dgdtoolApp.feedback_type.feedback_type_name">Feedback_type_name</th>
+                    <th translate="dgdtoolApp.feedback_type.description">Description</th>
+                    <th translate="dgdtoolApp.feedback_type.status_id">Status_id</th>
+                    <th translate="dgdtoolApp.feedback_type.created_by">Created_by</th>
+                    <th translate="dgdtoolApp.feedback_type.created_date">Created_date</th>
+                    <th translate="dgdtoolApp.feedback_type.modified_by">Modified_by</th>
+                    <th translate="dgdtoolApp.feedback_type.modified_date">Modified_date</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="feedback_type in feedback_types track by feedback_type.id">
+                    <td><a ui-sref="feedback_type.detail({id:feedback_type.id})">{{feedback_type.id}}</a></td>
+                    <td>{{feedback_type.feedback_type_name}}</td>
+                    <td>{{feedback_type.description}}</td>
+                    <td>{{feedback_type.status_id}}</td>
+                    <td>{{feedback_type.created_by}}</td>
+                        <td>{{feedback_type.created_date | date:'mediumDate'}}</td>
+                    <td>{{feedback_type.modified_by}}</td>
+                        <td>{{feedback_type.modified_date | date:'mediumDate'}}</td>
+                    <td>
+                        <button type="submit"
+                                ui-sref="feedback_type.detail({id:feedback_type.id})"
+                                class="btn btn-info btn-sm">
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="feedback_type.edit({id:feedback_type.id})"
+                                class="btn btn-primary btn-sm">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>
+                        </button>
+                        <button type="submit"
+                                ng-click="delete(feedback_type.id)"
+                                class="btn btn-danger btn-sm">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <nav>
+            <ul class="pager">
+                <li ng-show="links['first'] >= 0" ng-click="loadPage(links['first'])"><a href="#">&lt;&lt;</a></li>
+                <li ng-show="page > 0" ng-click="loadPage(links['prev'] || 0)"><a href="#">&lt;</a></li>
+                <li ng-show="links['next']" ng-click="loadPage(links['next'])"><a href="#">&gt;</a></li>
+                <li ng-show="links['last'] > 0" ng-click="loadPage(links['last'])"><a href="#">&gt;&gt;</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>

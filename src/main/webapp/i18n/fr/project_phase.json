@@ -1,0 +1,24 @@
+{
+    "dgdtoolApp": {
+        "project_phase" : {
+            "home": {
+                "title": "Project_phases",
+                "createLabel": "Créer un nouveau Project_phase",
+                "createOrEditLabel": "Créer ou éditer un Project_phase"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Project_phase {{ id }} ?"
+            },
+            "detail": {
+                "title": "Project_phase"
+            },
+            "project_phase_name": "Project_phase_name",
+            "description": "Description",
+            "status_id": "Status_id",
+            "created_by": "Created_by",
+            "modified_by": "Modified_by",
+            "modified_date": "Modified_date"
+        }
+    }
+}
+

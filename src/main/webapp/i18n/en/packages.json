@@ -1,0 +1,28 @@
+{
+    "dgdtoolApp": {
+        "packages" : {
+            "home": {
+                "title": "Packagess",
+                "createLabel": "Create a new Packages",
+                "createOrEditLabel": "Create or edit a Packages"
+            },
+            "created": "A new Packages is created with identifier {{ param }}",
+            "updated": "A Packages is updated with identifier {{ param }}",
+            "deleted": "A Packages is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Packages {{ id }}?"
+            },
+            "detail": {
+                "title": "Packages"
+            },
+            "package_name": "Package_name",
+            "package_type_id": "Package_type_id",
+            "description": "Description",
+            "status_id": "Status_id",
+            "created_by": "Created_by",
+            "created_date": "Created_date",
+            "modified_by": "Modified_by",
+            "modified_date": "Modified_date"
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "dgdtoolApp": {
+        "decision" : {
+            "home": {
+                "title": "Decisions",
+                "createLabel": "Créer un nouveau Decision",
+                "createOrEditLabel": "Créer ou éditer un Decision"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Decision {{ id }} ?"
+            },
+            "detail": {
+                "title": "Decision"
+            },
+            "decision_name": "Decision_name",
+            "description": "Description",
+            "status_id": "Status_id",
+            "created_by": "Created_by",
+            "created_date": "Created_date",
+            "modified_by": "Modified_by",
+            "modified_date": "Modified_date"
+        }
+    }
+}
+

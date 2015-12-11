@@ -1,0 +1,27 @@
+{
+    "dgdtoolApp": {
+        "server_role" : {
+            "home": {
+                "title": "Server_roles",
+                "createLabel": "Create a new Server_role",
+                "createOrEditLabel": "Create or edit a Server_role"
+            },
+            "created": "A new Server_role is created with identifier {{ param }}",
+            "updated": "A Server_role is updated with identifier {{ param }}",
+            "deleted": "A Server_role is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Server_role {{ id }}?"
+            },
+            "detail": {
+                "title": "Server_role"
+            },
+            "server_role_name": "Server_role_name",
+            "description": "Description",
+            "status_id": "Status_id",
+            "created_by": "Created_by",
+            "created_date": "Created_date",
+            "modified_by": "Modified_by",
+            "modified_date": "Modified_date"
+        }
+    }
+}

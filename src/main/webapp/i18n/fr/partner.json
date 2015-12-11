@@ -1,0 +1,28 @@
+{
+    "dgdtoolApp": {
+        "partner" : {
+            "home": {
+                "title": "Partners",
+                "createLabel": "Créer un nouveau Partner",
+                "createOrEditLabel": "Créer ou éditer un Partner"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Partner {{ id }} ?"
+            },
+            "detail": {
+                "title": "Partner"
+            },
+            "partner_name": "Partner_name",
+            "partner_key": "Partner_key",
+            "partner_base_url": "Partner_base_url",
+            "partner_broker_url": "Partner_broker_url",
+            "description": "Description",
+            "status_id": "Status_id",
+            "created_by": "Created_by",
+            "created_date": "Created_date",
+            "modified_by": "Modified_by",
+            "modified_date": "Modified_date"
+        }
+    }
+}
+
